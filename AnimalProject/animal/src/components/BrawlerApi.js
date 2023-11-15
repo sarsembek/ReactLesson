@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 const News = () => {
-    const[articles, setNews] = useState('');
+    const[articles, setNews] = useState([]);
 
     useEffect(() => {
         fetch('https://api.spaceflightnewsapi.net/v4/articles/')
