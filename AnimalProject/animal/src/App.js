@@ -2,7 +2,7 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import './App.css';
 import { Link } from 'react-router-dom';
-import News from './components/BrawlerApi';
+import News from './components/NewsApi';
 
 function App() {
   // const[image, setImage] = useState(null)

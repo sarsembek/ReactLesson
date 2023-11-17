@@ -1,12 +1,17 @@
 import React from "react";
+import { Cat, Dog } from '../model/Animal';
 
 export const MyComponent2 = () => {
 
-    const carInfo = { name: "Toyota", model: "Camry" };
+    const dog = new Dog('Sharik', 'Boy', 21.5, 'Labrador')
+    const cat = new Cat('Musya', 'Girl', 4.9, 'Cyprus')
 
     return (
         <>
-            <h2>I am a { carInfo.name } { carInfo.model}!</h2>
+            <p>{dog.present()}</p>
+            <p>{dog.bark()}</p>
+            <p>{cat.present()}</p>
+            <p>{cat.meow()}</p>
         </>
     )
 }

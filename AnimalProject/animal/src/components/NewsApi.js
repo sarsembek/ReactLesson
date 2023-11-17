@@ -15,7 +15,7 @@ const News = () => {
         <>
         <ul>
           {articles.map((article) => (
-            <li key={article.id}>
+            <li key={article.id} style={{borderBottom: "1px solid #000"}}>
               <h2>{article.title}</h2>
               <p>{article.summary}</p>
               <a href={article.url}>Read more</a>

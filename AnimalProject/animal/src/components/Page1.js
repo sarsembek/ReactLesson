@@ -1,12 +1,13 @@
 import React from "react";
+// import User from "../model/User";
 
 export const MyComponent1 = () => {
 
-    const carInfo = { name: "Ford", model: "Mustang" };
+    // const user = new User("Aidyn", "fasdasf", "example@.com")
 
     return (
         <>
-            <h2>I am a { carInfo.name } { carInfo.model}!</h2>
+            {/* <h2>{user.present()}</h2> */}
         </>
     )
 }
