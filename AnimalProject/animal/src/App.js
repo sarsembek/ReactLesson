@@ -3,6 +3,8 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import { Link } from 'react-router-dom';
 import News from './components/NewsApi';
+import { Stopwatch } from './components/Stopwatch';
+import { MyForm } from './components/Form';
 
 function App() {
   // const[image, setImage] = useState(null)
@@ -29,7 +31,9 @@ function App() {
       <Link to="/page2">
         Page 2
       </Link>
-      <News/>
+      {/* <News/> */}
+      <MyForm />
+      <Stopwatch />
     </>
   );
 }
