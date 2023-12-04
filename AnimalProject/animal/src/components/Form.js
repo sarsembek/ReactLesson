@@ -12,6 +12,7 @@ export function MyForm() {
   const handleSubmit = (event) => {
     event.preventDefault();
     localStorage.setItem('inputs', JSON.stringify(inputs))
+    alert(localStorage.getItem('inputs'))
   }
 
   return (

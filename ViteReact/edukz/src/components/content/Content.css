@@ -1,0 +1,33 @@
+#container {
+    display: flex;
+    flex-direction: column;
+
+}
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#input {
+    width: 80%;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    width: 75%
+}
+
+.flex-1 {
+    display: flex;
+    padding: 3rem;
+    border: 2px #fff solid;
+    border-radius: 0.5rem;
+}
+
+.icon {
+    padding: 1rem;
+
+    margin-right: 1rem;
+}

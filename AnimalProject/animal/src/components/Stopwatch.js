@@ -4,7 +4,7 @@ export const Stopwatch = () => {
     const [startTime, setStartTime] = useState(null);
     const [now, setNow] = useState(null);
     const intervalRef = useRef(null);
-
+    const [flag, setFlag] = useState(true);
     function handleStart() {
         setStartTime(Date.now());
         setNow(Date.now());
@@ -26,9 +26,13 @@ export const Stopwatch = () => {
 
     return (
         <>
+        {flag &&
+            <>
             <h1>Time passed: {secondsPassed.toFixed(3)}</h1>
             <button onClick={handleStart}>Start</button>
             <button onClick={handleStop}>Stop</button>
+            </>
+        }
         </>
     );
 }
