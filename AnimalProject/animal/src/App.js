@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import News from './components/NewsApi';
 import { Stopwatch } from './components/Stopwatch';
 import { MyForm } from './components/Form';
+import Counter from './components/Counter';
 
 function App() {
   // const[image, setImage] = useState(null)
@@ -34,6 +35,7 @@ function App() {
       {/* <News/> */}
       <MyForm />
       <Stopwatch />
+      <Counter />
     </>
   );
 }
